@@ -55,6 +55,7 @@ RUN echo "ubuntu:ubuntu" | chpasswd && \
     sudo usermod -a -G sudo ubuntu
 
 RUN wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb && apt install ./teamviewer_amd64.deb
+RUN wget https://issuecdn.baidupcs.com/issue/netdisk/LinuxGuanjia/3.5.0/baidunetdisk_3.5.0_amd64.deb && apt install ./baidunetdisk_3.5.0_amd64.deb
 
 COPY . /app
 
