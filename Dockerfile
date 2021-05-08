@@ -37,7 +37,8 @@ RUN set -ex; \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
     
-RUN wget https://issuecdn.baidupcs.com/issue/netdisk/LinuxGuanjia/3.5.0/baidunetdisk_3.5.0_amd64.deb && apt install ./teamviewer_amd64.deb
+RUN wget -P /tmp https://issuecdn.baidupcs.com/issue/netdisk/LinuxGuanjia/3.5.0/baidunetdisk_3.5.0_amd64.deb
+RUN dpkg -i /tmp/baidunetdisk_3.5.0_amd64.deb
 
 ENV HOME=/root \
     DEBIAN_FRONTEND=noninteractive \
