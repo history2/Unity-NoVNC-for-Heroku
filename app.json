@@ -1,5 +1,5 @@
 {
-	"name": "VNC快速部署",
+	"name": "VNC",
 	"description": "Deploy VNC to Heroku.",
 	"repository": "https://github.com/history2/Unity-NoVNC-for-Heroku",
 	"logo": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Nginx_logo.svg",
