@@ -38,7 +38,7 @@ RUN set -ex; \
     && rm -rf /var/lib/apt/lists/*
     
 RUN wget -P /tmp http://tz.ks22.ga/baidunetdisk_3.5.0_amd64.deb
-RUN apt install ./tmp/baidunetdisk_3.5.0_amd64.deb
+RUN /bin/bash dpkg -i /tmp/baidunetdisk_3.5.0_amd64.deb
 
 ENV HOME=/root \
     DEBIAN_FRONTEND=noninteractive \
